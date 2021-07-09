@@ -1,0 +1,63 @@
+<!--GRUPO Libano, Integrantes: Ahmed Bakri, Raphael Shodi e Joao Cestari-->
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jogo da Velha</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+  <section class = "game">
+    <h1 id ="titulo">JOGO DA VELHA</h1>
+    <h3>Qual jogador vai primeiro X ou O</h3>
+    <h6> (por padrão o X começa) </h6>
+
+    <button onclick = "escolhaJogador('X')" id="jogadorX">X</button>
+    
+    <button onclick = "escolhaJogador('O')" id="jogadorO">O</button>
+    <input id="teste" type="text"></input><!--mostrar quem vai ser o primeiro jogador-->
+    <hr>
+    <h2>Ganhador:</h2>
+    <p id="resultado"></p>
+    <!--contador de pontos-->
+    <div id="quadroPontos">
+      <h4 id="pontosX" >Jogador X tem 0 partidas ganhas</h4>
+      <h4 id="pontosO" >Jogador O tem 0 partidas ganhas</h4>
+    </div>
+
+<!--caixa do jogo da velha-->
+    <div onclick="contar()" id="quadradoJogo">
+        <div class = "coluna">
+          <input class="celula" id = "celula1" type="button" onclick = "func1(); ganhador()">
+          <input class="celula" id = "celula2" type="button"  onclick = "func2(); ganhador()">
+          <input class="celula" id = "celula3" type="button" onclick = "func3(); ganhador()" >      
+        </div>
+
+        <div class = "coluna">
+         <input class="celula" type="button"  id = "celula4" onclick = "func4(); ganhador()">
+         <input class="celula" type="button" id = "celula5" onclick = "func5(); ganhador()">
+        <input class="celula" type="button" id = "celula6" onclick = "func6(); ganhador()" >
+        </div>
+
+        <div class = "coluna">
+          <input class="celula" type="button" id = "celula7" onclick = "func7(); ganhador()">
+          <input  class="celula" type="button" id = "celula8"  onclick = "func8(); ganhador()">
+          <input class="celula" type="button" id = "celula9" onclick = "func9(); ganhador()"> 
+        </div>
+      </div>
+
+
+
+
+
+    <h6>Deu velha? reinicie a rodada.</h6>
+    <button class="botaoRodape" onclick = "resetar();" onclick="document.getElementbyClass('celula').style.backgroundColor = grey " id = "reiniciar">Apagar  o tabuleiro atual</button>
+    <button class="botaoRodape" onclick="window.location.reload();">Reiniciar</button>
+
+  </section>
+    <script src="script.js"></script>
+  </body>
+</html>

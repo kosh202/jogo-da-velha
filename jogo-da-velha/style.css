@@ -1,0 +1,118 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.game{
+  text-align: center;
+}
+
+#quadroPontos{
+  position: relative;
+  height: 2vw;
+  display: flex;
+  width: 106%;
+}
+
+#pontosO{
+  position: relative;
+  left: 40%;
+  width: 25vw;
+  color: black;
+  bottom: 90%;  
+}
+
+#pontosX{
+  position: relative;
+  width: 25vw;
+  left: 10%;
+  bottom: 90%;
+}
+
+#quadradoJogo{
+  position: relative;
+  border: 2px solid black;
+  height: 24vw;
+  width: 22vw;
+  left: 40%;
+  /*os dois abaixo são para ajeitar a celula dentro do quadradoJogo*/
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.celula{
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 6vw;
+  width: 6vw;
+  color:black;
+  font-size: 5vw;
+
+}
+
+#celula1{
+  left: 1vw;
+  bottom: 16vw;
+}
+
+#celula2{
+  left: 8vw;
+  bottom: 16vw;
+}
+
+#celula3{
+  left: 15vw;
+  bottom: 16vw;
+}
+
+#celula4{
+  bottom: 9vw;
+  left: 1vw;
+}
+
+#celula5{
+  bottom: 9vw;
+  left: 8vw;
+}
+
+#celula6{
+bottom: 9vw;
+left: 15vw;
+}
+
+#celula7{
+  bottom: 2vw;
+  left: 1vw;
+}
+
+#celula8{
+  bottom: 2vw;
+  left: 8vw;
+}
+
+#celula9{
+  bottom: 2vw;
+  left: 15vw;
+}
+
+.botaoRodape{
+  margin: 1vw;
+}
+
+body {
+  background-color: rgba(5, 5, 97, 0.63);
+}
+
+button {
+  background-color: #707070;
+  color:rgb(194, 194, 252);
+  cursor: pointer;
+}
+
+input {
+  background-color: #707070;
+  color: white;
+  cursor: pointer;
+}
